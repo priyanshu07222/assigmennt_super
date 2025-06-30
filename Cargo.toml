@@ -1,0 +1,22 @@
+[package]
+name = "axum_assing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Web framework
+axum = "0.7"
+tokio = { version = "1.0", features = ["full"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Encoding/Decoding
+base64 = "0.21"
+bs58 = "0.5"
+
+# Solana SDK and Token Program
+solana-sdk = "1.17"
+spl-token = "4.0"
+spl-associated-token-account = "2.2"
